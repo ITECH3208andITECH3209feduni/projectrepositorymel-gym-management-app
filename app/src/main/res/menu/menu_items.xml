@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/change"
+        android:enabled="true"
+        android:title="Password Change"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/notifi"
+        android:enabled="true"
+        android:title="NOTIFICATION"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/message"
+        android:enabled="true"
+        android:title="MESSAGES"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/query"
+        android:enabled="true"
+        android:title="@string/queries"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/help"
+        android:enabled="true"
+        android:title="@string/help"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/logout"
+        android:enabled="true"
+        android:title="@string/logout"
+        app:showAsAction="never"/>
+
+
+</menu>

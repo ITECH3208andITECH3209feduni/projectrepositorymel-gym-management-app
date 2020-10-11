@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.gms.activities.ChatActivity">
+
+    <EditText
+        android:id="@+id/all_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:inputType="text|textMultiLine"
+        android:layout_above="@+id/message_area"
+        android:background="@drawable/et_background"
+        android:gravity="top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/message_area"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="6">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_background"
+            android:padding="10dp"
+            android:id="@+id/send_message"
+            android:hint="Enter Message"
+            android:layout_weight="5">
+        </EditText>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/send"
+            android:id="@+id/send"
+            android:background="#FFFF"
+            android:layout_weight="1">
+        </ImageButton>
+    </LinearLayout>
+
+</RelativeLayout>
