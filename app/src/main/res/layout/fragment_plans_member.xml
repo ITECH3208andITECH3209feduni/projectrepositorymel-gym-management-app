@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.gms.fragments.PlansMember">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_above="@+id/plans"
+           android:id="@+id/recycler_view">
+       </androidx.recyclerview.widget.RecyclerView>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/button_background"
+           android:textStyle="bold"
+           android:id="@+id/plans"
+           android:text="@string/view_subscribed_plan"
+           android:textColor="#FFFF"
+           android:textSize="25sp"
+           android:layout_centerHorizontal="true"
+           android:layout_alignParentBottom="true"
+           android:layout_marginTop="20dp"
+           android:layout_marginBottom="20dp">
+       </Button>
+   </RelativeLayout>
+
+</FrameLayout>

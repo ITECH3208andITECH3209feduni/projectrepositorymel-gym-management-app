@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/et_background"
+    app:layout_constraintCircleRadius="15dp"
+    android:layout_gravity="center">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/exit"
+        android:layout_margin="5dp"
+        android:src="@drawable/cross">
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Rate This App"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="#673AB7"
+        android:textStyle="bold"/>
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/colorPrimary"
+        android:layout_centerInParent="true"
+        android:numStars="5"
+        android:rating="2.5"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRate"
+        android:layout_below="@id/ratingBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_background"
+        android:text="RATE"
+        android:textColor="#FFFF"
+        android:textStyle="bold">
+    </Button>
+</RelativeLayout>
